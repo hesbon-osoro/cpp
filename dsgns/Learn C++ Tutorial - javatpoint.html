@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.javatpoint.com/cpp-tutorial -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="./Learn C++ Tutorial - javatpoint_files/amp4ads-host-v0.js.download"></script><script src="./Learn C++ Tutorial - javatpoint_files/pubads_impl_rendering_319.js.download"></script><script async="" src="./Learn C++ Tutorial - javatpoint_files/async-ads.js.download"></script><script async="" src="./Learn C++ Tutorial - javatpoint_files/async-ads.js.download"></script><script type="text/javascript" async="" src="./Learn C++ Tutorial - javatpoint_files/ga.js.download"></script><title>Learn C++ Tutorial - javatpoint</title><link rel="SHORTCUT ICON" href="https://www.javatpoint.com/images/favicon2.png">
+<link rel="stylesheet" type="text/css" href="./Learn C++ Tutorial - javatpoint_files/link.css">
+<link rel="dns-prefetch" href="https://clients1.google.com/"><link rel="dns-prefetch" href="https://static.javatpoint.com/"><link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/"><link rel="dns-prefetch" href="https://www.google.com/"><link rel="dns-prefetch" href="https://feedify.net/"><meta name="theme-color" content="#4CAF50"><meta property="og:title" content="Learn C++ Tutorial - javatpoint"><meta property="og:description" content="Learn C++ tutorial for beginners and professionals with examples on constructor, if-else, switch, break, continue, comments, arrays, object and class, exception, static, structs, inheritance, aggregation etc.">
+<meta name="keywords" content="C++, tutorial, beginners, professionals, introduction, if-else, switch, break, continue, comments, arrays, object and class, exception"><meta name="description" content="Learn C++ tutorial for beginners and professionals with examples on constructor, if-else, switch, break, continue, comments, arrays, object and class, exception, static, structs, inheritance, aggregation etc."><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="canonical" href="https://www.javatpoint.com/cpp-tutorial">
+<meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta name="twitter:title" property="og:title" content="Learn C++ Tutorial - javatpoint"><meta name="twitter:description" property="og:description" content="Learn C++ tutorial for beginners and professionals with examples on constructor, if-else, switch, break, continue, comments, arrays, object and class, exception, static, structs, inheritance, aggregation etc."><meta property="og:url" content="https://www.javatpoint.com/cpp-tutorial"><meta property="og:site_name" content="www.javatpoint.com"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@pagejavatpoint"><meta name="twitter:domain" content="www.javatpoint.com"><meta name="twitter:creator" content="@pagejavatpoint">
+<script src="./Learn C++ Tutorial - javatpoint_files/osd.js.download"></script><script src="./Learn C++ Tutorial - javatpoint_files/ca-pub-4699858549023382.js.download"></script><script type="text/javascript" async="" src="./Learn C++ Tutorial - javatpoint_files/f(4).txt"></script><script type="text/javascript" async="" src="./Learn C++ Tutorial - javatpoint_files/f(4).txt"></script><script id="feedify_webscript">
+var feedify = feedify || {};
+window.feedify_options={fedify_url:"https://feedify.net/"};
+(function (window, document){
+	function addScript( script_url ){
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = script_url;
+		document.getElementsByTagName('head')[0].appendChild(s);
+	}
+	addScript('https://tpcf.feedify.net/uploads/settings/2e588c15fa58f6d438b0255693eb0ea3.js?ts='+Math.random());
+	addScript('https://cdn.feedify.net/getjs/feedbackembad-min-2.0.js');
+})(window, document);
+</script><script type="text/javascript" src="./Learn C++ Tutorial - javatpoint_files/2e588c15fa58f6d438b0255693eb0ea3.js.download"></script><script type="text/javascript" src="./Learn C++ Tutorial - javatpoint_files/feedbackembad-min-2.0.js.download"></script>
+
+<link href="https://www.javatpoint.com/manifest.json" rel="manifest">
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/37784/adRecover.js?ts=1543562646174'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Learn C++ Tutorial - javatpoint_files/adRecover.js.download" type="text/javascript" async=""></script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/37780/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./Learn C++ Tutorial - javatpoint_files/adpushup.js.download" type="text/javascript" async=""></script>
+<link rel="preload" href="./Learn C++ Tutorial - javatpoint_files/f(5).txt" as="script"><script type="text/javascript" src="./Learn C++ Tutorial - javatpoint_files/f(5).txt"></script><link rel="preload" href="./Learn C++ Tutorial - javatpoint_files/f(6).txt" as="script"><script type="text/javascript" src="./Learn C++ Tutorial - javatpoint_files/f(6).txt"></script><link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/r20190306/r20190131/show_ads_impl.js" as="script"><script type="text/javascript" async="" src="./Learn C++ Tutorial - javatpoint_files/jquery.min.js.download"></script><script src="./Learn C++ Tutorial - javatpoint_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./Learn C++ Tutorial - javatpoint_files/default+en.css"><link type="text/css" rel="stylesheet" href="./Learn C++ Tutorial - javatpoint_files/default.css"><script src="./Learn C++ Tutorial - javatpoint_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./Learn C++ Tutorial - javatpoint_files/default+en.css"><link type="text/css" rel="stylesheet" href="./Learn C++ Tutorial - javatpoint_files/default.css"><script async="" src="./Learn C++ Tutorial - javatpoint_files/f(7).txt"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-8655001720710332",enable_page_level_ads: true});</script><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-control-cse{border-color:#ECE4E4;background-color:#EFEBEB}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D9D9D9}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#4CAF50;background-color:#4CAF50;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive{border-color:#CCCCCC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhActive{border-color:#CCCCCC;border-bottom-color:#FFFFFF;background-color:#FFFFFF}.gsc-tabsArea{border-color:#CCCCCC}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover,.gsc-imageResult:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#783F04}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#783F04}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#BF9000}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#BF9000}.gsc-cursor-page{color:#783F04}a.gsc-trailing-more-results:link{color:#783F04}.gs-webResult .gs-snippet,.gs-imageResult .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl,.gs-imageResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#783F04;}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#783F04;}.gsc-webResult.gsc-result.gsc-promotion{border-color:#F6F6F6;background-color:#F6F6F6}.gsc-completion-title{color:#783F04}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#783F04}.gcsc-find-more-on-google-magnifier{fill:#783F04}</style><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-control-cse{border-color:#ECE4E4;background-color:#EFEBEB}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D9D9D9}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#4CAF50;background-color:#4CAF50;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive{border-color:#CCCCCC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhActive{border-color:#CCCCCC;border-bottom-color:#FFFFFF;background-color:#FFFFFF}.gsc-tabsArea{border-color:#CCCCCC}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover,.gsc-imageResult:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#783F04}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#783F04}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#BF9000}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#BF9000}.gsc-cursor-page{color:#783F04}a.gsc-trailing-more-results:link{color:#783F04}.gs-webResult .gs-snippet,.gs-imageResult .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl,.gs-imageResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#783F04;}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#783F04;}.gsc-webResult.gsc-result.gsc-promotion{border-color:#F6F6F6;background-color:#F6F6F6}.gsc-completion-title{color:#783F04}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#783F04}.gcsc-find-more-on-google-magnifier{fill:#783F04}</style><style type="text/css">.dp-cpp .datatypes { color: #2E8B57; font-weight: bold; }</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:5.5px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:5.5px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><script src="./Learn C++ Tutorial - javatpoint_files/gpt.js.download" async=""></script><script src="./Learn C++ Tutorial - javatpoint_files/pubads_impl_319.js.download" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html"></head> 
+<body onload="highlightlink()"> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: block;">&#8679;</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;"><div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px">
+    <tbody><tr>
+        <td>
+            <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px">
+                <a href="https://www.javatpoint.com/"><img src="./Learn C++ Tutorial - javatpoint_files/jtp_logo.png" alt="Javatpoint Logo"></a>
+            </div>
+            <div style="float:left;width:60%;">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" placeholder="Custom Search" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+                
+            </div>
+            
+        </td>
+    </tr>
+        <!--<tr>
+        <td>
+            <div id="headerlink" style="padding:0px;margin:0px"><span style="margin-right:20px;width:45px"></span><span style="float:right;margin-right:5px;width:45%"> </span>
+                
+            </div>
+        </td>
+    </tr>-->
+
+</tbody></table> </div>
+<div class="headermobile">
+<div style="margin-top:10px;padding:0px;text-align:left;">
+<span style="float:left"><input type="image" src="./Learn C++ Tutorial - javatpoint_files/menuhome64.png" alt="Go To Top" onclick="showmenu()"></span>
+<span style="float:left"><a href="https://www.javatpoint.com/"><img src="./Learn C++ Tutorial - javatpoint_files/jtp_logo.png" alt="Javatpoint Logo"></a></span>
+
+</div>
+<div style="margin:0px;padding:0px;clear:both">
+<script>
+  (function() {
+    var cx = '005383125436438536544:y1edweedxwi';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_1"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id2"><table cellspacing="0" cellpadding="0" id="gs_id51" class="gstl_51 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti51" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id2" placeholder="Custom Search" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px; outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st51" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb51" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+<!--<form class="navbar-search-m" method="get" action="https://www.google.com/search" target="_blank"> <input type="text" name="q" class="search-query span2-m" placeholder="Search on javatpoint..." title="Search on Javatpoint"/><input type="hidden" name="sitesearch" value="www.javatpoint.com"/></form>-->
+
+</div>
+</div>
+<div id="link" style="clear:both">  <div class="ddsmoothmenu">
+<ul>
+<li><a href="http://www.javatpoint.com/">Home</a></li>
+<li><a href="https://www.javatpoint.com/c-programming-language-tutorial">C</a></li>
+<li><a href="https://www.javatpoint.com/cpp-tutorial" class="selected">C++</a></li>
+<li><a href="https://www.javatpoint.com/c-sharp-tutorial">C#</a></li>
+<li><a href="https://www.javatpoint.com/java-tutorial">Java</a></li>
+<li><a href="https://www.javatpoint.com/php-tutorial">PHP</a></li>
+<li><a href="https://www.javatpoint.com/html-tutorial">HTML</a></li>
+<li><a href="https://www.javatpoint.com/css-tutorial">CSS</a></li>
+<li><a href="https://www.javatpoint.com/javascript-tutorial">JavaScript</a></li>
+<li><a href="https://www.javatpoint.com/jquery-tutorial">jQuery</a></li>
+<li><a href="https://www.javatpoint.com/xml-tutorial">XML</a></li>
+<li><a href="https://www.javatpoint.com/json-tutorial">JSON</a></li>
+<li><a href="https://www.javatpoint.com/ajax-tutorial">Ajax</a></li>
+<li><a href="https://www.javatpoint.com/nodejs-tutorial">Node.js</a></li>
+<li><a href="https://www.javatpoint.com/sql-tutorial">SQL</a></li>
+<li><a href="https://www.javatpoint.com/examaccess">Quiz</a></li>
+<li><a href="https://www.javatpoint.com/free-java-projects">Projects</a></li>
+<li><a href="https://www.javatpoint.com/corejava-interview-questions">Interview Q</a></li>
+<li><a href="https://www.javatpoint.com/comment.jsp">Comment</a></li>
+<li><a href="https://www.javatpoint.com/forum">Forum</a></li>
+<li><a href="https://www.javatpoint.com/training">Training</a></li>
+
+</ul>
+<br style="clear: left">
+</div></div>
+<div class="mobilemenu" style="clear:both"> 
+<!-- Cm_300x250_Mob_14/9 -->
+<ins class="adPushupAds" data-adpcontrol="hqdgs" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDbV8zMDB4MjUwX01vYl8xNC85IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MzAwcHg7aGVpZ2h0OjI1MHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjcwMTQyNzI1MTkiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4=" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+</div>
+
+<div id="menu">
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-tutorial" style="color: black;"><strong>C++ Tutorial</strong> <img src="./Learn C++ Tutorial - javatpoint_files/open-12.png" alt="open link"></a>
+<a href="https://www.javatpoint.com/c-vs-cpp">C vs C++</a>
+<a href="https://www.javatpoint.com/cpp-history">C++ History</a>
+<a href="https://www.javatpoint.com/cpp-features">C++ Features</a>
+<a href="https://www.javatpoint.com/cpp-installation">C++ Installation </a>
+<a href="https://www.javatpoint.com/cpp-program">C++ Program</a>
+<a href="https://www.javatpoint.com/cpp-basic-input-output">C++ cout, cin, endl</a>
+
+<a href="https://www.javatpoint.com/cpp-variable">C++ Variable</a>
+<a href="https://www.javatpoint.com/cpp-data-types">C++ Data types</a>
+<a href="https://www.javatpoint.com/cpp-keywords">C++ Keywords</a>
+<a href="https://www.javatpoint.com/cpp-operators">C++ Operators</a>
+
+</div>
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Control Statement</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-if-else">C++ if-else</a>
+<a href="https://www.javatpoint.com/cpp-switch">C++ switch</a>
+<a href="https://www.javatpoint.com/cpp-for-loop">C++ For Loop</a>
+<a href="https://www.javatpoint.com/cpp-while-loop">C++ While Loop</a>
+<a href="https://www.javatpoint.com/cpp-do-while-loop">C++ Do-While Loop</a>
+<a href="https://www.javatpoint.com/cpp-break-statement">C++ Break Statement</a>
+<a href="https://www.javatpoint.com/cpp-continue-statement">C++ Continue Statement</a>
+<a href="https://www.javatpoint.com/cpp-goto-statement">C++ Goto Statement</a>
+<a href="https://www.javatpoint.com/cpp-comments">C++ Comments</a>
+</div>
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Functions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-functions">C++ Functions</a>
+<a href="https://www.javatpoint.com/call-by-value-and-call-by-reference-in-cpp">Call by value &amp; reference</a>
+<a href="https://www.javatpoint.com/cpp-recursion">C++ Recursion</a>
+<a href="https://www.javatpoint.com/cpp-storage-classes">C++ Storage Classes</a>
+</div>
+
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Arrays</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-arrays">C++ Arrays</a>
+<a href="https://www.javatpoint.com/cpp-passing-array-to-function">C++  Array to Function</a>
+<a href="https://www.javatpoint.com/cpp-multidimensional-array">Multidimensional Arrays</a>
+</div>
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Pointers</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-pointers">C++ Pointers</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Object Class</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-oops-concepts">C++ OOPs Concepts</a>
+<a href="https://www.javatpoint.com/cpp-object-and-class">C++ Object Class</a>
+<a href="https://www.javatpoint.com/cpp-constructor">C++ Constructor</a>
+<a href="https://www.javatpoint.com/cpp-copy-constructor">C++ Copy Constructor</a>
+
+<a href="https://www.javatpoint.com/cpp-destructor">C++ Destructor</a>
+<a href="https://www.javatpoint.com/cpp-this-pointer">C++ this Pointer</a>
+<a href="https://www.javatpoint.com/cpp-static">C++ static</a>
+<a href="https://www.javatpoint.com/cpp-structs">C++ Structs</a>
+<a href="https://www.javatpoint.com/cpp-enumeration">C++ Enumeration</a>
+<a href="https://www.javatpoint.com/cpp-friend-function">C++ Friend Function</a>
+<a href="https://www.javatpoint.com/cpp-math-functions">C++ Math Functions</a>
+ </div>
+ <div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Inheritance</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-inheritance">C++ Inheritance</a>
+<a href="https://www.javatpoint.com/cpp-aggregation">C++ Aggregation</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Polymorphism</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-polymorphism">C++ Polymorphism</a>
+<a href="https://www.javatpoint.com/cpp-overloading">C++  Overloading</a>
+<a href="https://www.javatpoint.com/cpp-function-overriding">C++  Overriding</a>
+<a href="https://www.javatpoint.com/cpp-virtual-function">C++ Virtual Function</a>
+ 
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Abstraction</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/interfaces-in-cpp">C++ Interfaces</a>
+<a href="https://www.javatpoint.com/data-abstraction-in-cpp">C++ Data Abstraction</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Namespaces</span></h2>
+</div>
+<div class="leftmenu">
+ <a href="https://www.javatpoint.com/cpp-namespaces">C++ Namespaces</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Strings</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-strings">C++ Strings</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Exceptions</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-exception-handling">C++ Exception Handling</a>
+<a href="https://www.javatpoint.com/cpp-try-catch">C++ try/catch</a>
+<a href="https://www.javatpoint.com/cpp-user-defined-exceptions">C++ User-Defined</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Templates</span></h2>
+</div>
+<div class="leftmenu">
+ <a href="https://www.javatpoint.com/cpp-templates">C++ Templates</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Signal Handling</span></h2>
+</div>
+<div class="leftmenu">
+ <a href="https://www.javatpoint.com/cpp-signal-handling">C++ Signal Handling</a>
+</div>
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ File &amp; Stream</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-files-and-streams">C++ File &amp; Stream</a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ STL Tutorial</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-stl-components">C++ STL Components</a>
+<a href="https://www.javatpoint.com/cpp-vector">C++ Vector</a>
+<a href="https://www.javatpoint.com/post/cpp-deque">C++ Deque</a>
+<a href="https://www.javatpoint.com/post/cpp-list">C++ List</a>
+<a href="https://www.javatpoint.com/cpp-set">C++ Set</a>
+<a href="https://www.javatpoint.com/cpp-stack">C++ Stack</a>
+<a href="https://www.javatpoint.com/cpp-queue">C++ Queue</a>
+<a href="https://www.javatpoint.com/post/cpp-map">C++ Map</a>
+<a href="https://www.javatpoint.com/post/cpp-multimap">C++ Multimap</a>
+<a href="https://www.javatpoint.com/post/cpp-map">C++ Map</a>
+<a href="https://www.javatpoint.com/post/cpp-bitset">C++ Bitset</a>
+<a href="https://www.javatpoint.com/cpp-algorithm">C++ Algorithm</a>
+
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Iterators</span></h2>
+</div>
+<div class="leftmenu">
+ <a href="https://www.javatpoint.com/cpp-iterators">C++ Iterators</a>
+ <a href="https://www.javatpoint.com/cpp-bidirectional-iterator">C++ Bidirectional Iterator</a>
+ <a href="https://www.javatpoint.com/cpp-forward-iterator">C++ Forward Iterator</a>
+ <a href="https://www.javatpoint.com/cpp-input-iterator">C++ Input Iterator</a>
+ <a href="https://www.javatpoint.com/cpp-output-iterator">C++ Output Iterator</a>
+</div>
+
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">C++ Programs</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-programs">C++Programs</a>
+<a href="https://www.javatpoint.com/fibonacci-series-in-cpp"><span>Fibonacci Series</span></a>
+<a href="https://www.javatpoint.com/prime-number-program-in-cpp"><span>Prime Number</span></a>
+<a href="https://www.javatpoint.com/palindrome-program-in-cpp"><span>Palindrome Number</span></a>
+<a href="https://www.javatpoint.com/factorial-program-in-cpp"><span>Factorial</span></a>
+<a href="https://www.javatpoint.com/armstrong-number-in-cpp"><span>Armstrong Number</span></a>
+<a href="https://www.javatpoint.com/sum-of-digits-program-in-cpp"><span>Sum of digits</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-reverse-number"><span>Reverse Number</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-swap-two-numbers-without-third-variable"><span>Swap Number</span></a>
+<a href="https://www.javatpoint.com/matrix-multiplication-in-cpp"><span>Matrix Multiplication</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-convert-decimal-to-binary"><span>Decimal to Binary</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-convert-number-in-characters"><span>Number in Characters</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-print-alphabet-triangle"><span>Alphabet Triangle</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-print-number-triangle"><span>Number Triangle</span></a>
+<a href="https://www.javatpoint.com/cpp-program-to-generate-fibonacci-triangle"><span>Fibonacci Triangle</span></a>
+</div>
+<div class="leftmenu2">
+<h2 class="spanh2"><span class="spanh2">Interview Question</span></h2>
+</div>
+<div class="leftmenu">
+<a href="https://www.javatpoint.com/cpp-interview-questions">Interview Question</a>
+</div>
+<img src="./Learn C++ Tutorial - javatpoint_files/wh.JPG" alt="JavaTpoint">
+<br>
+<div id="leftad" style="margin-left:20px">
+<!-- javatpointleft -->
+<ins class="adPushupAds" data-adpcontrol="g8drp" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBqYXZhdHBvaW50bGVmdCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lLWJsb2NrO3dpZHRoOjE2MHB4O2hlaWdodDo2MDBweCIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI0NDc2NDAxMjIyIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+</div>
+<div id="8b476cee-75c9-4caf-a662-cd49b79c2ba9" data-section="8b476cee-75c9-4caf-a662-cd49b79c2ba9" class="_ap_apex_ad" data-xpath="#menu" data-section-id="" data-render-time="1552426627194" style="display: block; clear: both; width: 160px; height: 600px; margin: -40px auto 20px;"><div id="ADP_37780_160X600_8b476cee-75c9-4caf-a662-cd49b79c2ba9" data-google-query-id="COfTx_bH_eACFQ6J7QodcKoN3g">
+<script type="text/javascript">
+window.adpushup.adpTags.que.push(function(){
+window.adpushup.adpTags.display("ADP_37780_160X600_8b476cee-75c9-4caf-a662-cd49b79c2ba9");
+});
+</script>
+<div id="google_ads_iframe_/103512698/21773424079_0__container__" style="border: 0pt none; width: 160px; height: 600px;"></div></div></div></div>
+<div class="onlycontent"><div id="6d436dd8-a805-41ab-84d8-179baabe98c9" data-section="6d436dd8-a805-41ab-84d8-179baabe98c9" class="_ap_apex_ad" data-xpath=".onlycontent:eq(0)" data-section-id="" data-render-time="1552426627182" data-refresh-time="1552426627190" data-timeout="28" style="display: block; clear: both; width: 728px; height: 90px; margin: 10px auto 40px;"><div id="ADP_37780_728X90_6d436dd8-a805-41ab-84d8-179baabe98c9" data-google-query-id="CJuzyvbH_eACFWeN7QodkrAFtw">
+
+<div id="google_ads_iframe_/103512698/21773064353_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21773064353_0" title="3rd party ad content" name="google_ads_iframe_/103512698/21773064353_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true" __idm_frm__="628" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(1).html"></iframe></div></div></div>
+<div class="onlycontentad">
+<!-- CM_JTP_Leaderbaord -->
+<ins class="adPushupAds" data-adpcontrol="nuoc1" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBDTV9KVFBfTGVhZGVyYmFvcmQgLS0+CjxpbnMgY2xhc3M9ImFkc2J5Z29vZ2xlIgogICAgIHN0eWxlPSJkaXNwbGF5OmJsb2NrIgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjkyMDE5MDE5MTUiCiAgICAgZGF0YS1hZC1mb3JtYXQ9ImF1dG8iCiAgICAgZGF0YS1mdWxsLXdpZHRoLXJlc3BvbnNpdmU9InRydWUiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4=" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+</div>
+<div class="onlycontentinner">
+<div id="city">
+<table>
+<tbody><tr><td>
+
+<div id="bottomnextup">
+<a class="next" href="https://www.javatpoint.com/c-vs-cpp">next &#8594;</a>
+ 
+</div>
+
+<h1 class="h1">C++ Tutorial</h1>
+<a href="https://training.javatpoint.com/c-cpp-training.jsp" target="_blank"><img src="./Learn C++ Tutorial - javatpoint_files/cpp-training.png" class="imageright" alt="C++ Programming"></a>
+<!--<img src="https://static.javatpoint.com/cpp/images/cpp.png" alt="C++ Tutorial" style="float:right;margin-left:10px"/>-->
+<p>C++ tutorial provides basic and advanced concepts of C++. Our C++ tutorial is designed for beginners and professionals.</p>
+<p>C++ is an object-oriented programming language. It is an extension to C programming.</p>
+<p>Our C++ tutorial includes all topics of C++ such as first example, control statements, objects and classes, inheritance, constructor, destructor, this, static, polymorphism, abstraction, abstract class, interface, namespace, encapsulation,  arrays, strings, exception handling,  File IO, etc.</p>
+
+<h1 class="h1"> What is C++</h1>
+<p>C++ is a general purpose, case-sensitive, free-form programming language that supports object-oriented, procedural and generic programming.</p>
+<p>C++ is a middle-level language, as it encapsulates both high and low level language features.</p>
+<hr>
+<h2 class="h2">Object-Oriented Programming (OOPs)</h2>
+<p>C++ supports the object-oriented programming, the four major pillar of object oriented programming used in C++ are:</p>
+<ol class="points">
+<li>Inheritance</li>
+<li>Polymorphism</li>
+<li>Encapsulation</li>
+<li>Abstraction</li>
+</ol>
+<hr>
+<h2 class="h2">C++ Standard Libraries</h2>
+<p>Standard C++ programming is divided into three important parts:</p>
+<ul class="points">
+<li>The core library includes the data types, variables and literals, etc.</li>
+<li>The standard library includes the set of functions manipulating strings, files, etc.</li>
+<li>The Standard Template Library (STL) includes the set of methods manipulating a data structure.</li>
+</ul>
+<script async="" src="./Learn C++ Tutorial - javatpoint_files/f(7).txt"></script>
+<!-- CM_JTP_WTC_Responsive -->
+<ins class="adsbygoogle cm_jtp_wtc_responsive" style="display: inline-block; width: 336px; height: 280px;" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:336px;height:280px;" __idm_frm__="617" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<hr>
+<h2 class="h2">Usage of C++</h2>
+<p>By the help of C++ programming language, we can develop different types of secured and robust applications:</p>
+<ul class="points">
+<li>Window application</li>
+<li>Client-Server application</li>
+<li>Device drivers</li>
+<li>Embedded firmware etc</li>
+</ul>
+
+<h2 class="h2">C++ Program</h2><div id="b3a914fc-a059-4fc8-bb26-24febcb18ab6" data-section="b3a914fc-a059-4fc8-bb26-24febcb18ab6" class="_ap_apex_ad" data-xpath="" data-section-id="4" data-render-time="1552426627808" style="display: block; clear: both; text-align: center; margin: 0px auto;"><div id="ADP_37780_300X250_b3a914fc-a059-4fc8-bb26-24febcb18ab6" data-google-query-id="COvTx_bH_eACFQ6J7QodcKoN3g">
+<script type="text/javascript">
+window.adpushup.adpTags.que.push(function(){
+window.adpushup.adpTags.display("ADP_37780_300X250_b3a914fc-a059-4fc8-bb26-24febcb18ab6");
+});
+</script>
+<div id="google_ads_iframe_/103512698/21794627455_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div></div>
+<p>In this tutorial, all C++ programs are given with C++ compiler so that you can easily change the C++ program code.</p>
+<p>File: main.cpp</p>
+<div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="https://www.javatpoint.com/cpp-tutorial#" onclick="dp.sh.Toolbar.Command(&#39;ViewSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/cpp-tutorial#" onclick="dp.sh.Toolbar.Command(&#39;PrintSource&#39;,this);return false;"></a><a href="https://www.javatpoint.com/cpp-tutorial#" onclick="dp.sh.Toolbar.Command(&#39;About&#39;,this);return false;"></a></div></div><ol start="1" class="dp-cpp"><li class="alt"><span><span class="preprocessor">#include&nbsp;&lt;iostream&gt;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">using</span><span>&nbsp;</span><span class="keyword">namespace</span><span>&nbsp;std;&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="datatypes">int</span><span>&nbsp;main()&nbsp;{&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;cout&nbsp;&lt;&lt;&nbsp;<span class="string">"Hello&nbsp;C++&nbsp;Programming"</span><span>;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">return</span><span>&nbsp;0;&nbsp;&nbsp;</span></span></li><li class=""><span>}&nbsp;&nbsp;</span></li></ol></div><textarea name="code" class="Cpp" style="display: none;">#include &lt;iostream&gt;
+using namespace std;
+int main() {
+   cout &lt;&lt; "Hello C++ Programming";
+   return 0;
+}
+</textarea></div>
+<p>A detailed explanation of first C++ program is given in next chapters.</p>
+<!--<span class="testit"><a href="https://compiler.javatpoint.com/cpp/test.jsp?filename=main" target="_blank">Test it Now</a></span>-->
+<hr>
+<h2 class="h2 center textshadow">C++ Index</h2>
+<hr>
+<div class="responsivediv">
+<div class="col-3">
+<p><strong>C++ Tutorial</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-tutorial">C++ Tutorial</a></li>
+<li><a href="https://www.javatpoint.com/what-is-cpp">What is C++</a></li>
+<li><a href="https://www.javatpoint.com/c-vs-cpp">C vs C++</a></li>
+<li><a href="https://www.javatpoint.com/cpp-history">C++ History</a></li>
+<li><a href="https://www.javatpoint.com/cpp-features">C++ Features</a></li>
+<li><a href="https://www.javatpoint.com/cpp-installation">C++ Installation </a></li>
+<li><a href="https://www.javatpoint.com/cpp-program">C++ Program</a></li>
+<li><a href="https://www.javatpoint.com/cpp-basic-input-output">C++ cout, cin, endl</a></li>
+<li><a href="https://www.javatpoint.com/cpp-variable">C++ Variable</a></li>
+<li><a href="https://www.javatpoint.com/cpp-data-types">C++ Data types</a></li>
+<li><a href="https://www.javatpoint.com/cpp-keywords">C++ Keywords</a></li>
+<li><a href="https://www.javatpoint.com/cpp-operators">C++ Operators</a></li>
+</ul>
+
+<p><strong>C++ Control Statement</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-if-else">C++ if-else</a></li>
+<li><a href="https://www.javatpoint.com/cpp-switch">C++ switch</a></li>
+<li><a href="https://www.javatpoint.com/cpp-for-loop">C++ For Loop</a></li>
+<li><a href="https://www.javatpoint.com/cpp-while-loop">C++ While Loop</a></li>
+<li><a href="https://www.javatpoint.com/cpp-do-while-loop">C++ Do-While Loop</a></li>
+<li><a href="https://www.javatpoint.com/cpp-break-statement">C++ Break Statement</a></li>
+<li><a href="https://www.javatpoint.com/cpp-continue-statement">C++ Continue Statement</a></li>
+<li><a href="https://www.javatpoint.com/cpp-goto-statement">C++ Goto Statement</a></li>
+<li><a href="https://www.javatpoint.com/cpp-comments">C++ Comments</a></li>
+</ul>
+
+<p><strong>C++ Functions</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-functions">C++ Functions</a></li>
+<li><a href="https://www.javatpoint.com/call-by-value-and-call-by-reference-in-cpp">Call by value &amp; reference</a></li>
+<li><a href="https://www.javatpoint.com/cpp-recursion">C++ Recursion</a></li>
+<li><a href="https://www.javatpoint.com/cpp-storage-classes">C++ Storage Classes</a></li>
+</ul>
+
+<p><strong>C++ Arrays</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-arrays">C++ Arrays</a></li>
+<li><a href="https://www.javatpoint.com/cpp-passing-array-to-function">C++  Array to Function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multidimensional-array">Multidimensional Arrays</a></li>
+</ul>
+
+<p><strong>C++ Pointers</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-pointers">C++ Pointers</a></li>
+</ul>
+
+<p><strong>C++ Object Class</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-oops-concepts">C++ OOPs Concepts</a></li>
+<li><a href="https://www.javatpoint.com/cpp-object-and-class">C++ Object Class</a></li>
+<li><a href="https://www.javatpoint.com/cpp-constructor">C++ Constructor</a></li>
+<li><a href="https://www.javatpoint.com/cpp-destructor">C++ Destructor</a></li>
+<li><a href="https://www.javatpoint.com/cpp-this-pointer">C++ this Pointer</a></li>
+<li><a href="https://www.javatpoint.com/cpp-static">C++ static</a></li>
+<li><a href="https://www.javatpoint.com/cpp-structs">C++ Structs</a></li>
+<li><a href="https://www.javatpoint.com/cpp-enumeration">C++ Enumeration</a></li>
+<li><a href="https://www.javatpoint.com/cpp-friend-function">C++ Friend Function</a></li>
+</ul>
+
+<p><strong>C++ Inheritance</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-inheritance">C++ Inheritance</a></li>
+<li><a href="https://www.javatpoint.com/cpp-aggregation">C++ Aggregation</a></li>
+</ul>
+
+<p><strong>C++ Polymorphism</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-polymorphism">C++ Polymorphism</a></li>
+<li><a href="https://www.javatpoint.com/cpp-overloading">C++ Overloading</a></li>
+<li><a href="https://www.javatpoint.com/cpp-function-overriding">C++ Overriding</a></li>
+<li><a href="https://www.javatpoint.com/cpp-virtual-function">C++ Virtual Function</a></li>
+</ul>
+
+<p><strong>C++ Abstraction</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/interfaces-in-cpp">C++ Interfaces</a></li>
+<li><a href="https://www.javatpoint.com/data-abstraction-in-cpp">C++ Data Abstraction</a></li>
+</ul>
+
+<p><strong>C++ Namespaces</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-namespaces">C++ Namespaces</a></li>
+</ul>
+
+<p><strong>C++ Templates</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-templates">C++ Templates</a></li>
+</ul>
+
+<p><strong>C++ Strings</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-strings">C++ Strings</a></li>
+</ul>
+
+<p><strong>C++ Exceptions</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-exception-handling">C++ Exception Handling</a></li>
+<li><a href="https://www.javatpoint.com/cpp-try-catch">C++ try/catch</a></li>
+<li><a href="https://www.javatpoint.com/cpp-user-defined-exceptions">C++ User-Defined</a></li>
+</ul>
+
+<p><strong>C++ File &amp; Stream</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-files-and-streams">C++ File &amp; Stream</a></li>
+</ul>
+
+<p><strong>C++ Programs</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-programs">C++Programs</a></li>
+<li><a href="https://www.javatpoint.com/fibonacci-series-in-cpp"><span>Fibonacci Series</span></a></li>
+<li><a href="https://www.javatpoint.com/prime-number-program-in-cpp"><span>Prime Number</span></a></li>
+<li><a href="https://www.javatpoint.com/palindrome-program-in-cpp"><span>Palindrome Number</span></a></li>
+<li><a href="https://www.javatpoint.com/factorial-program-in-cpp"><span>Factorial</span></a></li>
+<li><a href="https://www.javatpoint.com/armstrong-number-in-cpp"><span>Armstrong Number</span></a></li>
+<li><a href="https://www.javatpoint.com/sum-of-digits-program-in-cpp"><span>Sum of digits</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-reverse-number"><span>Reverse Number</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-swap-two-numbers-without-third-variable"><span>Swap Number</span></a></li>
+<li><a href="https://www.javatpoint.com/matrix-multiplication-in-cpp"><span>Matrix Multiplication</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-convert-decimal-to-binary"><span>Decimal to Binary</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-convert-number-in-characters"><span>Number in Characters</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-print-alphabet-triangle"><span>Alphabet Triangle</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-print-number-triangle"><span>Number Triangle</span></a></li>
+<li><a href="https://www.javatpoint.com/cpp-program-to-generate-fibonacci-triangle"><span>Fibonacci Triangle</span></a></li>
+</ul>
+
+
+<p><strong>C++ STL Tutorial</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-algorithm">C++ STL Algorithm</a>
+</li><li><a href="https://www.javatpoint.com/cpp-algorithm-adjacent_find-function">algorithm adjacent_find() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-any_of-function">algorithm any_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-copy-function">algorithm copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-copy_if-function">algorithm copy_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-count-function">algorithm count() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-count_if-function">algorithm count_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-equal-function">algorithm equal() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-find-function">algorithm find() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-find_end-function">algorithm find_end() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-find_first_of-function">algorithm find_first_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-find_if-function">algorithm find_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-find_if_not-function">algorithm find_if_not() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-for_each-function">algorithm for_each() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-move-function">algorithm move() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-all_of-function">algorithm all_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-copy_backward-function">algorithm copy_backward() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-copy_n-function">algorithm copy_n() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-search-function">algorithm search() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-is_permutation-function">algorithm is_permutation() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-mismatch-function">algorithm mismatch() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-move_backward-function">algorithm move_backward() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-none_of-function">algorithm none_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-search_n-function">algorithm search_n() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-swap-function">algorithm swap() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-fill-function">algorithm fill() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-iter_swap-function">algorithm iter_swap() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-replace_copy_if-function">algorithm replace_copy_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-replace_copy-function">algorithm replace_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-replace_if-function">algorithm replace_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-replace-function">algorithm replace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-swap_ranges-function">algorithm swap_ranges() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-transform-function">algorithm transform() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-fill_n-function">algorithm fill_n() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-generate_n-function">algorithm generate_n() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-generate-function">algorithm generate() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-remove-function">algorithm remove() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-is_partitioned-function">algorithm is_partitioned() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-random_shuffle-function">algorithm random_shuffle() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-remove_copy_if-function">algorithm remove_copy_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-remove_copy-function">algorithm remove_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-partition_copy-function">algorithm partition_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-partition_point-function">algorithm partition_point() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-partition-function">algorithm partition() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-remove_if-function">algorithm remove_if() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-reverse_copy-function">algorithm reverse_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-reverse-function">algorithm reverse() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-rotate_copy-function">algorithm rotate_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-rotate-function">algorithm rotate() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-shuffle-function">algorithm shuffle() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-stable_partition-function">algorithm stable_partition() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-unique_copy-function">algorithm unique_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-unique-function">algorithm unique() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-is_sorted_until-function">algorithm is_sorted_until() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-is_sorted-function">algorithm is_sorted() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-lower_bound-function">algorithm lower_bound() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-nth_element-function">algorithm nth_element() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-partial_sort_copy-function">algorithm partial_sort_copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-partial_sort-function">algorithm partial_sort() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-sort-function">algorithm sort() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-stable_sort-function">algorithm stable_sort() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-binary_search-function">algorithm binary_search() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-equal_range-function">algorithm equal_range() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-includes-function">algorithm includes() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-inplace_merge-function">algorithm inplace_merge() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-merge-function">algorithm merge() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-set_union-function">algorithm set_union() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-algorithm-upper_bound-function">algorithm upper_bound() function</a></li>
+</ul>
+
+<p><strong>C++ STL Bitset</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-bitset">C++ Bitset</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-all-function">bitset all() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-any-function">bitset any() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-count-function">bitset count() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-flip-function">bitset flip() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-none-function">bitset none() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-operator[]-function">bitset operator[]</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-bitset-reset-function">bitset reset() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-set-function">bitset set() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-size-function">bitset size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-test-function">bitset test() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-to_string-function">bitset to_string() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-to_ullong-function">bitset to_ullong() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-bitset-to_ulong-function">bitset to_ulong() function</a></li>
+</ul>
+</div>
+
+
+<div class="col-3">
+<p><strong>C++ STL Deque</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-deque">C++ Deque</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-assign-function">Deque assign() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-emplace-function">Deque emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-emplace_back-function">Deque emplace_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-emplace_front-function">Deque emplace_front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-insert-function">Deque insert() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-push_back-function">Deque push_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-push_front-function">Deque push_front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-pop_back-function">Deque pop_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-pop_front-function">Deque pop_front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-swap-function">Deque swap() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-clear-function">Deque clear() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-empty-function">Deque empty() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-erase-function">Deque erase() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-max_size-function">Deque max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-resize-function">Deque resize() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-shrink_to_fit-function">Deque shrink_to_fit() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-size-function">Deque size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-at-function">Deque at() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-operator[]()-function">Deque operator[]() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-operator=()-function">Deque operator=() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-back-function">Deque back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-begin-function">Deque begin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-cbegin-function">Deque cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-end-function">Deque end() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-cend-function">Deque cend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-rbegin-function">Deque rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-crbegin-function">Deque crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-rend-function">Deque rend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-deque-crend-function">Deque crend() function</a></li>
+</ul>
+
+<p><strong>C++ STL List</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-list">C++ List</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-insert-function">List insert() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-push_back-function">List push_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-push_front-function">List push_front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-pop_back-function">List pop_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-pop_front-function">List pop_front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-empty-function">List empty() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-size-function">List size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-max_size-function">List max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-front-function">List front() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-back-function">List back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-swap-function">List swap() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-reverse-function">List reverse() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-sort-function">List sort() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-merge-function">List merge() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-splice-function">List splice() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-unique-function">List unique() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-resize-function">List resize() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-assign-function">List assign() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-emplace-function">List emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-emplace_back-function">List emplace_back() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-list-emplace_front-function">List emplace_front() function</a></li>
+</ul>
+
+<p><strong>C++ STL Map</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-map">C++ Map</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-at-function">map at() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-begin-function">map begin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-cbegin-function">map cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-cend-function">map cend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-crbegin-function">map crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-crend-function">map crend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-empty-function">map empty() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-end-function">map end() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-max_size-function">map max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-operator[]-function">map operator[]</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-map-rbegin-function">map rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-rend-function">map rend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-size-function">map size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-clear-function">map clear() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-emplace-function">map emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-emplace_hint-function">map emplace_hint() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-erase-function">map erase() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-find-function">map find() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-insert-function">map insert() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-operator=()-function">map operator=()</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-map-swap-function">map swap() function</a></li>
+</ul>
+
+<p><strong>C++ STL Math</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-math-cos-function">math cos() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-sin-function">math sin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-tan-function">math tan() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-acos-function">math acos() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-asin-function">math asin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-atan-function">math atan() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-atan2-function">math atan2() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-cosh-function">math cosh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-sinh-function">math sinh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-tanh-function">math tanh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-acosh-function">math acosh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-asinh-function">math asinh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-atanh-function">math atanh() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-exp-function">math exp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-frexp-function">math frexp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-idexp-function">math Idexp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-log-function">math log() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-log10-function">math log10() function</a></li> 
+<li><a href="https://www.javatpoint.com/cpp-math-modf-function">math modf() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-exp2-function">math exp2() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-expm1-function">math expm1() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-log1p-function">math log1p() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-log2-function">math log2() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-logb-function">math logb() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-scalbn-function">math scalbn() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-scalbln-function">math scalbln() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-ilogb-function">math ilogb() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-copysign-function">math copysign() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-nextafter-function">math nextafter() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-nexttoward-function">math nexttoward() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fdim-function">math fdim() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fmax-function">math fmax() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fmin-function">math fmin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-pow-function">math pow() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-sqrt-function">math sqrt() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-cbrt-function">math cbrt() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-hypot-function">math hypot() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-ceil-function">math ceil() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-floor-function">math floor() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-round-function">math round() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-lround-function">math lround() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-llround-function">math llround() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fmod-function">math fmod() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-trunc-function">math trunc() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-rint-function">math rint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-lrint-function">math lrint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-llrint-function">math llrint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-nearbyint-function">math nearbyint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-remainder-function">math remainder() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-remquo-function">math remquo() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fabs-function">math fabs() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-abs-function">math abs() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fma-function">math fma() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-fpclassify-function">math fpclassify() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isfinite-function">math isfinite() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isinf-function">math isinf() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isnan-function">math isnan() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isnormal-function">math isnormal() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-signbit-function">math signbit() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isgreater-function">math isgreater() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isgreaterequal-function">math isgreaterequal() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-less-function">math less() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-islessequal-function">math islessequal() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-islessgreater-function">math islessgreater() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-isunordered-function">math isunordered() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-erf-function">math erf() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-erfc-function">math erfc() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-tgamma-function">math tgamma() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-math-lgamma-function">math lgamma() function</a></li>
+</ul>
+
+
+
+<p><strong>C++ STL priority_queue</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue">C++ priority_queue</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-priority_queue-emplace-function">priority_queue emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue-empty-function">priority_queue empty() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue-pop-function">priority_queue pop() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-prioriy_queue-push-function">priority_queue push() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue-size-function">priority_queue size() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue-swap-function">priority_queue swap() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-priority_queue-top-function">priority_queue top() function</a></li>
+</ul>
+
+<p><strong>C++ STL Stack</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-stack">C++ Stack</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-emplace-function">stack emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-empty-function">stack empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-pop-function">stack pop() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-push-function">stack push() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-size-function">stack size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-stack-top-function">stack top() function</a></li>
+</ul>
+
+<p><strong>C++ STL Queue</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-queue">C++ Queue</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-back-function">queue back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-emplace-function">queue emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-empty-function">queue empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-front-function">queue front() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-pop-function">queue pop() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-push-function">queue push() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-queue-size-function">queue size() function</a></li>
+</ul>
+</div>
+
+<div class="col-3">
+<p><strong>C++ STL Multiset</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-multiset">C++ multiset</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-constructor">multiset constructor</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-destructor">multiset destructor</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-begin-function">multiset begin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-end-function">multiset end() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-operator=-function">multiset operator=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-rbegin-function">multiset rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-rend-function">multiset rend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-cbegin-function">multiset cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-cend-function">multiset cend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-max_size-function">multiset max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-size-function">multiset size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-crbegin-function">multiset crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-crend-function">multiset crend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-empty-function">multiset empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-insert-function">multiset insert() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-clear-function">multiset clear() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-emplace-function">multiset emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-erase-function">multiset erase() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-swap-function">multiset swap() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-emplace_hint-function">multiset emplace_hint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-find-function">multiset find() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-key_comp-function">multiset key_comp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-value_comp-function">multiset value_comp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-count-function">multiset count() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-equal_range-function">multiset equal_range() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-lower_bound-function">multiset lower_bound() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-upper_bound-function">multiset upper_bound() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-get_allocator-function">multiset get_allocator() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator==">multiset operator==</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator!=">multiset operator!=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator-less-than">multiset operator&lt;</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator-less-than=">multiset operator&lt;=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator-greater-than">multiset operator&gt;</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-operator-greater-than=">multiset operator&gt;=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-multiset-non-member-swap-function">multiset swap() function</a></li>
+</ul>
+
+
+<p><strong>C++ STL Multimap</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/post/cpp-multimap">C++ Multimap</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-crbegin-function">multimap crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-crend-function">multimap crend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-begin-function">multimap begin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-cbegin-function">multimap cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-cend-function">multimap cend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-end-function">multimap end() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-rbegin-function">multimap rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-rend-function">multimap rend() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-clear-function">multimap clear() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-emplace-function">multimap emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-empty-function">multimap empty() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-erase-function">multimap erase() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-insert-function">multimap insert() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-swap-function">multimap swap() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-equal_range-function">multimap equal_range() function</a></li>
+<li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator==-function">multimap operator==</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator!=-function">multimap operator!=</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator%3C-function">multimap operator&lt;</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator%3C=-function">multimap operator&lt;=</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator%3E-function">multimap operator&gt;</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-operator%3E=-function">multimap operator&gt;=</a>
+</li><li><a href="https://www.javatpoint.com/post/cpp-multimap-non-member-swap-function">multimap swap() function</a></li>
+</ul>
+
+<p><strong>C++ STL Set</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-set">C++ Set</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-constructor">set constructor</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-destructor">set destructor</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-operator=()-function">set operator=() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-begin-function">set begin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-cbegin-function">set cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-end-function">set end() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-cend-function">set cend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-rbegin-function">set rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-rend-function">set rend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-crbegin-function">set crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-crend-function">set crend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-empty-function">set empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-size-function">set Size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-max_size-function">set max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-insert-function">set insert() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-erase-function">set erase() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-swap-function">set Swap() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-clear-function">set clear() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-emplace-function">set emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-emplace_hint-function">set emplace_hint() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-key_comp-function">set key_comp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-value_comp-function">set value_comp() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-find-function">set find() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-count-function">set count() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-lower_bound-function">set lower_bound() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-upper_bound-function">set upper_bound() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-equal_range-function">set equal_range() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-get_allocator-function">set get_allocator() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-set-non-member-operator==">set operator==</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-operator!=">set operator!=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-operator-less-than">set operator&lt;</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-operator-less-than=">set operator&lt;=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-operator-greater-than">set operator&gt;</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-operator-greater-than=">set operator&gt;=</a>
+</li><li><a href="https://www.javatpoint.com/cpp-set-non-member-swap-function">set swap() function</a></li>
+</ul>
+
+
+
+<p><strong>C++ STD Strings</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-string-compare-function">string compare() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-length-function">string length() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-swap-function">string swap() function</a></li>
+<li>string substr() function</li>
+<li><a href="https://www.javatpoint.com/cpp-string-size-function">string size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-resize-function">string resize() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-replace-function">string replace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-append-function">string append() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-at-function">string at() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-find-function">string find() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-find-first-of-function">string find_first_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-find-first-not-of-function">string find_first_not_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-find-last-of-function">string find_last_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-find-last-not-of-function">string find_last_not_of() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-insert-function">string insert() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-max-size-function">string max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-push-back-function">string push_back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-pop-back-function">string pop_back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-assign-function">sstring assign() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-copy-function">string copy() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-back-function">string back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-begin-function">string begin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-capacity-function">string capacity() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-cbegin-function">string cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-cend-function">string cend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-clear-function">string clear() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-crbegin-function">string crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-data-function">string data() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-empty-function">string empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-erase-function">string erase() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-front-function">string front() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-operator+=()-function">string operator+=()</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-operator=()-function">string operator=()</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-operator[]()-function">string operator[]()</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-rfind-function">string rfind() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-end-function">string end() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-rend-function">string rend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-shrink-to-fit-function">string shrink_to_fit() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-c-str-function">string c_str() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-crend-function">string crend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-rbegin-function">string rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-string-reserve-function">string reserve() function</a></li>
+<li>string get_allocator() function</li>
+</ul>
+
+<p><strong>C++ STL Vector</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-vector">C++ Vector</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-at-function">Vector at() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-back-function">Vector back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-front-function">Vector front() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-swap-function">Vector swap() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-push-back-function">Vector push_back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-pop-back-function">Vector pop_back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-empty-function">Vector empty() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-insert-function">Vector insert() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-erase-function">Vector erase() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-resize-function">Vector resize() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-clear-function">Vector clear() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-size-function">Vector size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-capacity-function">Vector capacity() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-assign-function">Vector assign() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-operator=()-function">Vector operator=() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-operator[]()-function">Vector operator[]() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-end-function">Vector end() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-emplace-function">Vector emplace() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-emplace-back-function">Vector emplace_back() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-rend-function">Vector rend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-rbegin-function">Vector rbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-begin-function">Vector begin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-max-size-function">Vector max_size() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-cend-function">Vector cend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-cbegin-function">Vector cbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-crbegin-function">Vector crbegin() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-crend-function">Vector crend() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-data-function">Vector data() function</a></li>
+<li><a href="https://www.javatpoint.com/cpp-vector-shrink-to-fit-function">Vector shrink_to_fit() function</a></li>
+</ul>
+
+<p><strong>Interview Questions</strong></p>
+<ul class="points">
+<li><a href="https://www.javatpoint.com/cpp-interview-questions">Interview Questions</a></li>
+</ul>
+</div>
+</div>
+<hr>
+<h2 class="h2">Prerequisite</h2>
+<p>Before learning C++, you must have the basic knowledge of C.</p>
+
+<h2 class="h2">Audience</h2>
+<p>Our C++ tutorial is designed to help beginners and professionals.</p>
+
+<h2 class="h2">Problem</h2>
+<p>We assure that you will not find any problem in this C++ tutorial. But if there is any mistake, please post the problem in contact form.</p>
+
+<div class="nexttopicdiv">
+<span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="https://www.javatpoint.com/c-vs-cpp">C vs C++</a></span>
+</div>
+<!-- link -->
+<br><br>
+
+<div id="bottomnext">
+ 
+<a style="float:right" class="next" href="https://www.javatpoint.com/c-vs-cpp">next &#8594;</a>
+</div>
+
+<br><br>
+</td></tr></tbody></table>
+</div>
+
+<!-- contribute start-->
+
+<!-- contribute end-->
+
+<script async="" src="./Learn C++ Tutorial - javatpoint_files/f(7).txt"></script>
+<ins class="adsbygoogle" style="display: block; text-align: center; height: 200px;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4699858549023382" data-ad-slot="7776236568" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:877px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:200px;margin:0;padding:0;position:relative;visibility:visible;width:877px;background-color:transparent;"><iframe width="877" height="200" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:877px;height:200px;" __idm_frm__="620" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+<h2 class="h2">Please Share</h2>
+<a rel="nofollow" title="Facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/cpp-tutorial"><img src="./Learn C++ Tutorial - javatpoint_files/facebook32.png" alt="facebook"></a>
+<a rel="nofollow" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.javatpoint.com/cpp-tutorial"><img src="./Learn C++ Tutorial - javatpoint_files/twitter32.png" alt="twitter"></a>
+<a rel="nofollow" title="Google+" target="_blank" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=https://www.javatpoint.com/cpp-tutorial"><img src="./Learn C++ Tutorial - javatpoint_files/google-plus32.png" alt="google plus"></a>
+<a rel="nofollow" title="Pinterest" target="_blank" href="https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/cpp-tutorial"><img src="./Learn C++ Tutorial - javatpoint_files/pinterest32.png" alt="pinterest"></a>
+<!--<a rel="nofollow" title="Tumblr" target="_blank" href="https://www.tumblr.com/share/link?url=https://www.javatpoint.com/cpp-tutorial"><img src="https://www.javatpoint.com/images/tumblr32.png" alt="tumbler"/></a>-->
+
+<!-- latest tutorials start --> 
+<h2 class="h2">Learn Latest Tutorials</h2>
+<div class="firsthomecontent">
+
+                        <a href="https://www.javatpoint.com/software-testing-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/software-testing-home.png" alt="Software Testing Tutorial">
+                                <p>Testing</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/numpy-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/numpy-home.png" alt="Numpy Tutorial">
+                                <p>NumPy</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/verbal-ability">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/verbal-ability-home.png" alt="Verbal Ability">
+                                <p>Verbal A.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/aws-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/aws-home.png" alt="AWS Tutorial">
+                                <p>AWS</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/discrete-mathematics-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/discrete-mathematics-home.png" alt="Discrete Mathematics Tutorial">
+                                <p>D. Math.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/react-native-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/react-native-home.png" alt="React Native Tutorial">
+                                <p>React Native</p>
+                            </div>
+                        </a>
+
+</div>
+<hr>
+<!-- preparation start -->  
+<h2 class="h2">Preparation</h2>
+<div class="firsthomecontent">
+
+                        <a href="https://www.javatpoint.com/aptitude/quantitative">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/quantitative-aptitude-home.png" alt="Aptitude">
+                                <p>Aptitude</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/reasoning">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/reasoning-home.png" alt="Logical Reasoning">
+                                <p>Reasoning</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/verbal-ability">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/verbal-ability-home.png" alt="Verbal Ability">
+                                <p>Verbal A.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/interview-questions-and-answers">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/interviewhome.png" alt="Interview Questions">
+                                <p>Interview</p>
+                            </div>
+                        </a>
+
+</div>
+ 
+<hr>
+<!-- B.Tech / MCA -->
+                    <h2 class="h2">B.Tech / MCA</h2>
+                    <div class="firsthomecontent">
+                        <a href="https://www.javatpoint.com/dbms-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/dbms-home.jpg" alt="DBMS tutorial">
+                                <p>DBMS</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/data-structure-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/ds-home.png" alt="Data Structures tutorial">
+                                <p>DS</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/daa-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/daa-home.png" alt="DAA tutorial">
+                                <p>DAA</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/os-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/operating-system-home.png" alt="Operating System tutorial">
+                                <p>OS</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/computer-network-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/computer-network-home.png" alt="Computer Network tutorial">
+                                <p>C. Network</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/compiler-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/compiler-design-home.png" alt="Compiler Design tutorial">
+                                <p>Compiler D.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/computer-organization-and-architecture-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/coa-home.png" alt="Computer Organization and Architecture">
+                                <p>COA</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/html-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/html-tutorial.png" alt="html tutorial">
+                                <p>Web Tech.</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/cyber-security-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/cyber-security-home.png" alt="Cyber Security tutorial">
+                                <p>Cyber Sec.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.javatpoint.com/c-programming-language-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/clanguagehome.png" alt="C Language tutorial">
+                                <p>C</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/cpp-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/cpp-home.png" alt="C++ tutorial">
+                                <p>C++</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/java-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/javahome.png" alt="Java tutorial">
+                                <p>Java</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/net-framework">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/net-home.png" alt=".Net Framework tutorial">
+                                <p>.Net</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/python-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/pythonhome.png" alt="Python tutorial">
+                                <p>Python</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.javatpoint.com/programs-list">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/programs.jpg" alt="List of Programs">
+                                <p>Programs</p>
+                            </div>
+                        </a>
+                        <a href="https://www.javatpoint.com/control-system-tutorial">
+                            <div class="homecontent"><img src="./Learn C++ Tutorial - javatpoint_files/control-system-home.jpg" alt="Control Systems tutorial">
+                                <p>Control S.</p>
+                            </div>
+                        </a>
+</div>
+
+
+</div>
+
+
+<br><br><div class="mobilemenu" style="clear:both">
+<ins class="adPushupAds" data-adpcontrol="jrfe7" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByZXNwb25zaXZlbW9iaWxlZm9vdGVyIC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTpibG9jayIKICAgICBkYXRhLWFkLWNsaWVudD0iY2EtcHViLTQ2OTk4NTg1NDkwMjMzODIiCiAgICAgZGF0YS1hZC1zbG90PSI4MjIyODY2MzE4IgogICAgIGRhdGEtYWQtZm9ybWF0PSJhdXRvIgogICAgIGRhdGEtZnVsbC13aWR0aC1yZXNwb25zaXZlPSJ0cnVlIj48L2lucz4KPHNjcmlwdD4KKGFkc2J5Z29vZ2xlID0gd2luZG93LmFkc2J5Z29vZ2xlIHx8IFtdKS5wdXNoKHt9KTsKPC9zY3JpcHQ+" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+</div></div>
+<div id="right"><div id="0aae5cbf-3eb2-41c5-bb96-9f93e1a988ea" data-section="0aae5cbf-3eb2-41c5-bb96-9f93e1a988ea" class="_ap_apex_ad" data-xpath="#right" data-section-id="" data-render-time="1552426627205" data-refresh-time="1552426627212" data-timeout="29" style="display: block; clear: both; width: 160px; height: 600px; margin: 0px auto;"><div id="ADP_37780_160X600_0aae5cbf-3eb2-41c5-bb96-9f93e1a988ea" data-google-query-id="COjTx_bH_eACFQ6J7QodcKoN3g">
+<script type="text/javascript">
+window.adpushup.adpTags.que.push(function(){
+window.adpushup.adpTags.display("ADP_37780_160X600_0aae5cbf-3eb2-41c5-bb96-9f93e1a988ea");
+});
+</script>
+<div id="google_ads_iframe_/103512698/21773771289_0__container__" style="border: 0pt none; width: 160px; height: 600px;"></div></div></div>
+
+<ins class="adPushupAds" data-adpcontrol="am3c1" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg==" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+<br><br>
+
+<ins class="adPushupAds" data-adpcontrol="am3c1" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSBuZXdyaWdodCAtLT4KPGlucyBjbGFzcz0iYWRzYnlnb29nbGUiCiAgICAgc3R5bGU9ImRpc3BsYXk6YmxvY2siCiAgICAgZGF0YS1hZC1jbGllbnQ9ImNhLXB1Yi00Njk5ODU4NTQ5MDIzMzgyIgogICAgIGRhdGEtYWQtc2xvdD0iNjAzNDkxMjU0MSIKICAgICBkYXRhLWFkLWZvcm1hdD0iYXV0byIKICAgICBkYXRhLWZ1bGwtd2lkdGgtcmVzcG9uc2l2ZT0idHJ1ZSI+PC9pbnM+CjxzY3JpcHQ+CihhZHNieWdvb2dsZSA9IHdpbmRvdy5hZHNieWdvb2dsZSB8fCBbXSkucHVzaCh7fSk7Cjwvc2NyaXB0Pg==" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+
+<br><br>
+
+<div id="6d451b18-b457-4a8e-a76d-e0f757e0543b" data-section="6d451b18-b457-4a8e-a76d-e0f757e0543b" class="_ap_apex_ad" data-xpath="#right" data-section-id="" data-render-time="1552426627221" data-refresh-time="1552426665182" data-timeout="589" style="display: block; clear: both; text-align: center; margin: 0px; position: fixed; top: 0px; z-index: 10000; bottom: auto; right: auto; left: auto;"><div id="ADP_37780_160X600_6d451b18-b457-4a8e-a76d-e0f757e0543b" data-google-query-id="CK20t4jI_eACFYdjFQgdGqYHgA">
+
+<div id="google_ads_iframe_/103512698/21781425726_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21781425726_0" title="3rd party ad content" name="google_ads_iframe_/103512698/21781425726_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;" data-google-container-id="d" data-load-complete="true"></iframe></div></div></div></div>
+<div class="right1024" style="float:left;margin-left:10px;margin-top:120px;">
+<!-- right1024only -->
+<ins class="adPushupAds" data-adpcontrol="6d5qg" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+<br><br>
+<ins class="adPushupAds" data-adpcontrol="6d5qg" data-ver="2" data-siteid="37780" data-ac="PHNjcmlwdCBhc3luYyBzcmM9Ii8vcGFnZWFkMi5nb29nbGVzeW5kaWNhdGlvbi5jb20vcGFnZWFkL2pzL2Fkc2J5Z29vZ2xlLmpzIj48L3NjcmlwdD4KPCEtLSByaWdodDEwMjRvbmx5IC0tPgo8aW5zIGNsYXNzPSJhZHNieWdvb2dsZSIKICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7d2lkdGg6MTIwcHg7aGVpZ2h0OjYwMHB4IgogICAgIGRhdGEtYWQtY2xpZW50PSJjYS1wdWItNDY5OTg1ODU0OTAyMzM4MiIKICAgICBkYXRhLWFkLXNsb3Q9IjIxODAxMTg3MTYiPjwvaW5zPgo8c2NyaXB0PgooYWRzYnlnb29nbGUgPSB3aW5kb3cuYWRzYnlnb29nbGUgfHwgW10pLnB1c2goe30pOwo8L3NjcmlwdD4K" data-push="1"></ins><script data-cfasync="false" type="text/javascript">(function (w, d) { for (var i = 0, j = d.getElementsByTagName("ins"), k = j[i]; i < j.length; k = j[++i]){ if(k.className == "adPushupAds" && k.getAttribute("data-push") != "1") { ((w.adpushup = w.adpushup || {}).control = (w.adpushup.control || [])).push(k); k.setAttribute("data-push", "1");} } })(window, document);</script>
+
+
+</div>
+<br>
+<div id="71317f72-a782-4d40-9d9c-aa8eb462a506" data-section="71317f72-a782-4d40-9d9c-aa8eb462a506" class="_ap_apex_ad" data-xpath="#footer" data-section-id="" data-render-time="1552426627229" style="display: block; clear: both; text-align: center; margin: 50px auto;"><div id="ADP_37780_970X250_71317f72-a782-4d40-9d9c-aa8eb462a506" data-google-query-id="CJ-zyvbH_eACFWeN7QodkrAFtw">
+
+<div id="google_ads_iframe_/103512698/21786956581_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/103512698/21786956581_0" title="3rd party ad content" name="google_ads_iframe_/103512698/21786956581_0" width="970" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="5" data-load-complete="true" __idm_frm__="629" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(4).html"></iframe></div></div></div><div id="footer" style="clear:both;width:100%">
+
+<!--<div style="width:100%;float:center;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#90715c,#523b1f);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Summer Training</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers <strong>Summer Internship Training</strong> on Java, PHP, .Net, Hadoop, Data Analytics, R Programming, SAP, Android, Python, Oracle, Seleninum, Linux, C++ and many more technologies in Delhi/NCR, India. For more visit <a style="color:white" href="http://training.javatpoint.com"><img src="images/linkglobe12.png" alt="javatpoint training"/>training.javatpoint.com</a> <br>Course Fee: &#8377; 6000 Only<br>Duration: 6 Week </p></div>--><div style="width:100%;margin-top:10px;color:white;background-image: linear-gradient(145deg,#52a2fc,#480fcc);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Javatpoint Services</h2> <p style="padding:0px 20px 0px 20px">JavaTpoint offers too many high quality services. Mail us on hr@javatpoint.com, to get more information about given services. </p><ul class="points"> <li>Website Designing</li><li>Website Development</li><li>Java Development</li><li>PHP Development</li><li>WordPress</li><li>Graphic Designing</li><li>Logo</li><li>Digital Marketing</li><li>On Page and Off Page SEO</li><li>PPC</li><li>Content Development</li><li>Corporate Training</li><li>Classroom and Online Training</li><li>Data Entry</li></ul> <p style="padding-bottom:60px"></p></div><div style="width:100%;margin-top:-20px;color:white;background-image: linear-gradient(145deg,#dc8140,#b16b15);line-height:28px;"> <h2 style="padding:60px 0px 0px 20px">Training For College Campus</h2> <p style="padding:0px 20px 60px 20px">JavaTpoint offers college campus training on Core Java, Advance Java, .Net, Android, Hadoop, PHP, Web Technology and Python. Please mail your requirement at hr@javatpoint.com. <br>Duration: 1 week to 2 week<br></p></div><!--<div class="homebox2"><h2>Our Initiatives</h2><marquee behavior="alternate"><a rel="nofollow noopener" href="https://www.hindi100.com"><div class="box2"><img class="box2img" src="https://www.hindi100.com/resources/images/javatpoint.png" alt="javatpoint"/><p>Hindi100</p></div></a><a rel="nofollow noopener" href="https://www.lyricsia.com"><div class="box2"><img class="box2img" src="https://www.hindi100.com/resources/images/lyrics.png" alt="lyrics"/><p>Lyricsia</p></div></a><a rel="nofollow noopener" href="http://www.hindi-typing.com"><div class="box2"><img class="box2img" src="https://www.hindi100.com/resources/images/hindi-typing.png" alt="hindi-typing"/><p>Hindi-Typing</p></div></a></marquee></div>--><script>var _gaq=_gaq || []; _gaq.push(['_setAccount', 'UA-24880427-1']); _gaq.push(['_trackPageview']); (function(){var ga=document.createElement('script'); ga.type='text/javascript'; ga.async=true; ga.src=('https:'==document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script><div style="margin-top:5px;text-align:center"> <sup style="font:16px arial;">Like/Subscribe us for latest updates or newsletter </sup> <a target="_blank" rel="nofollow noopener" href="https://feeds.feedburner.com/javatpointsonoo"><img src="./Learn C++ Tutorial - javatpoint_files/rss1.png" alt="RSS Feed"></a> <a target="_blank" rel="nofollow noopener" href="https://feedburner.google.com/fb/a/mailverify?uri=javatpointsonoo"><img src="./Learn C++ Tutorial - javatpoint_files/mail1.png" alt="Subscribe to Get Email Alerts"></a> <a rel="nofollow noopener" target="_blank" href="https://www.facebook.com/javatpoint"><img src="./Learn C++ Tutorial - javatpoint_files/facebook1.jpg" alt="Facebook Page"></a> <a target="_blank noopener" rel="nofollow" href="https://plus.google.com/u/0/+javatpoint"><img src="./Learn C++ Tutorial - javatpoint_files/google1.png" alt="Google Page"></a> <a target="_blank noopener" rel="nofollow" href="https://twitter.com/pagejavatpoint"><img src="./Learn C++ Tutorial - javatpoint_files/twitter1.png" alt="Twitter Page"></a> <a target="_blank" rel="nofollow noopener" href="https://www.youtube.com/channel/UCUnYvQVCrJoFWZhKK3O2xLg"><img src="./Learn C++ Tutorial - javatpoint_files/youtube32.png" alt="YouTube"></a> <a target="_blank" rel="nofollow noopener" href="https://javatpoint.blogspot.com/"><img src="./Learn C++ Tutorial - javatpoint_files/blog.png" alt="Blog Page"></a> </div><footer class="footer1"><div class="column4"><h3>Learn Tutorials</h3><a href="https://www.javatpoint.com/java-tutorial">Learn Java</a><a href="https://www.javatpoint.com/data-structure-tutorial">Learn Data Structures</a><a href="https://www.javatpoint.com/c-programming-language-tutorial">Learn C Programming</a><a href="https://www.javatpoint.com/cpp-tutorial">Learn C++ Tutorial</a><a href="https://www.javatpoint.com/c-sharp-tutorial">Learn C# Tutorial</a><a href="https://www.javatpoint.com/php-tutorial">Learn PHP Tutorial</a><a href="https://www.javatpoint.com/html-tutorial">Learn HTML Tutorial</a><a href="https://www.javatpoint.com/javascript-tutorial">Learn JavaScript Tutorial</a><a href="https://www.javatpoint.com/jquery-tutorial">Learn jQuery Tutorial</a><a href="https://www.javatpoint.com/spring-tutorial">Learn Spring Tutorial</a></div><div class="column4"><h3>Our Websites</h3><a href="https://www.javatpoint.com/">Javatpoint.com</a><a rel="dofollow noopener" target="_blank" href="https://www.hindi100.com/">Hindi100.com</a><a rel="dofollow noopener" target="_blank" href="https://www.lyricsia.com/">Lyricsia.com</a><a rel="nofollow noopener" target="_blank" href="https://www.quoteperson.com/">Quoteperson.com</a><a rel="nofollow noopener" target="_blank" href="http://www.hindi-typing.com/">Hindi-typing.com</a><a rel="nofollow noopener" target="_blank" href="http://www.shayaree.com/">Shayaree.com</a><a rel="nofollow noopener" target="_blank" href="https://www.jobandplacement.com/">Jobandplacement.com</a></div><div class="column4"><h3>Our Services</h3><p>Website Development</p><p>Android Development</p><p>Website Designing</p><p>Digital Marketing</p><p>Summer Training</p><p>Industrial Training</p><p>College Campus Training</p></div><div class="column4"><h3>Contact</h3><p>Address: G-13, 2nd Floor, Sec-3</p><p>Noida, UP, 201301, India</p><p>Contact No: 0120-4256464, 9990449935</p><a href="https://www.javatpoint.com/contact-us">Contact Us</a> <a href="https://www.javatpoint.com/subscribe.jsp">Subscribe Us</a> <a href="https://www.javatpoint.com/privacy-policy">Privacy Policy</a><a href="https://www.javatpoint.com/sitemap.xml">Sitemap</a></div></footer><footer class="footer2"><p>© Copyright 2011-2018 www.javatpoint.com. All rights reserved. Developed by JavaTpoint.</p></footer>
+</div></div></div><div style="display:none;position: fixed!important;z-index: 2147483646;padding: 4px 16px;background: #000;text-align: center;color: #fff;font-family: Arial;font-size: 12px;font-weight: 400;opacity: .65;top: 0!important;right: 0!important;border-radius: 2px;"><a href="https://feedify.net/?utm_source=referral&amp;utm_medium=PoweredBy&amp;utm_campaign=https%3A%2F%2Fwww.javatpoint.com%2Fcpp-tutorial" target="_blank" style="color:#fff;text-decoration:none;">Notifications Powered By Feedify</a></div>
+
+<iframe id="google_osd_static_frame_3978804130050" name="google_osd_static_frame" __idm_frm__="623" style="display: none; width: 0px; height: 0px;" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(5).html"></iframe><script src="./Learn C++ Tutorial - javatpoint_files/shcoreandbrush.js.download"></script><script type="text/javascript" src="./Learn C++ Tutorial - javatpoint_files/google.js.download"></script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:0px;height:0px;" __idm_frm__="624" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(6).html"></iframe></ins></ins></ins>
+<script> dp.SyntaxHighlighter.HighlightAll('code'); </script>
+
+  <table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 183px; display: none; top: 30px; left: 253px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gstl_51 gssb_c" style="width: 2px; display: none; top: 3px; left: -1px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><iframe id="__adp_frame__1208062963" __idm_frm__="627" style="display: none;" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(7).html"></iframe><iframe id="__adp_frame__1204428300" __idm_frm__="630" style="display: none;"></iframe></body><iframe id="google_shimpl" style="display: none;" __idm_frm__="616" src="./Learn C++ Tutorial - javatpoint_files/saved_resource(8).html"></iframe><iframe id="google_esf" name="google_esf" src="./Learn C++ Tutorial - javatpoint_files/zrt_lookup.html" data-ad-client="ca-pub-4699858549023382" style="display: none;"></iframe></html>

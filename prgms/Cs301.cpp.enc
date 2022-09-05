@@ -1,0 +1,103 @@
+#include <iostream>
+#include <string.h>
+using namespace std; 
+
+struct StudentProfile{
+	string userid;
+	string userName; 
+	string subject; 
+	string degreeName; 
+	string uniName; 
+};
+
+class ArrayList{
+	private: 
+	StudentProfile * arr; 
+	int current; 
+	int listSize; 
+	public: 
+	ArrayList(); 
+	void add(StudentProfile student); 
+	StudentProfile find(int x); 
+	void update(int postition, StudentProfile student);
+	void remove(int x); 
+	int listLenght(); 
+	void showList();
+	void cmpStdRec(StudentProfile x, StudentProfile y);
+	~ArrayList();  
+};
+ArrayList::ArrayList(){
+	arr = new StudentProfile [5]; 
+	listSize = 0 ; 
+	current = 0; 
+}
+void ArrayList::add(StudentProfile x){
+	arr[listSize] = x ; 
+	listSize++; 
+	current = listSize; 
+}
+StudentProfile ArrayList::find(int x){
+	return arr[x];
+}
+void ArrayList::update(int position, StudentProfile student){
+	arr[position] = student;
+}
+void ArrayList::remove(int x){
+		 arr[x].userid = ""; 
+		 arr[x].userName=""; 
+         arr[x].subject=""; 
+	     arr[x].degreeName=""; 
+	     arr[x].uniName="";
+}
+int ArrayList::listLenght(){
+	return listSize;
+}
+void ArrayList::showList(){
+	cout << "Sr.#\t\tID\t\tName\t\t\tSubject\t\tDegree\t\tUniversity"<< endl ; 
+	for(int i = 0 ; i <= listSize; i++){
+		if(arr[i].userid != ""){
+			cout << i + 1 << "          "  << arr[i].userid  << "       "  << arr[i].userName << "       " << arr[i].subject << "          " << arr[i].degreeName    << "          " << arr[i].uniName << endl; 
+		}
+	}
+}
+ArrayList::~ArrayList(){
+	delete []arr; 
+}
+int main(){
+	ArrayList StudentArray; 
+	StudentProfile std1, std2 , std3, std4, std5 ; 
+	std1.userid = "BC180203734\t" ;
+	std1.userName = "Muhammad Wasim\t" ; 
+	std1.subject = "\tCS-301" ; 
+	std1.degreeName = "ADP-CN"; 
+	std1.uniName = "Virtual University";
+	std2.userid = "BC170000000\t" ;
+	std2.userName = "Muhammad Shamroz\t" ; 
+	std2.subject = "\tCS-301" ; 
+	std2.degreeName = "ADP-CN"; 
+	std2.uniName = "Virtual University";
+	std3.userid = "BC180000000\t" ;
+	std3.userName = "Muhammad Tahir\t" ; 
+	std3.subject = "\tCS-301" ; 
+	std3.degreeName = "ADP-CN"; 
+	std3.uniName = "Virtual University";
+	std4.userid = "BC190000000\t" ;
+	std4.userName = "Muhammad Amir\t" ; 
+	std4.subject = "\tCS-301" ; 
+	std4.degreeName = "ADP-CN"; 
+	std4.uniName = "Virtual University";
+	std5.userid = "BC160000000\t" ;
+	std5.userName = "Muhammad Osama\t" ; 
+	std5.subject = "\tCS-301" ; 
+	std5.degreeName = "ADP-CN"; 
+	std5.uniName = "Virtual University";
+
+	
+	
+	StudentArray.add(std1);
+	StudentArray.add(std2);
+	StudentArray.add(std3);
+	StudentArray.add(std4);
+	StudentArray.add(std5);
+	StudentArray.showList();
+}

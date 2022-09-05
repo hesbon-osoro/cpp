@@ -1,0 +1,202 @@
+/*
+Auther : UMAIR MEHMOOD
+Whatsapp Group : http://bit.ly/cs201cs101
+This solution is for only idea make your own
+*/
+#include <iostream>
+#include <conio.h>
+#include <stdlib.h>
+using namespace std;
+
+int main()
+{
+	int total = 0, ch, nOfstudents1, nOfstudents2, nOfstudents3, nOfstudents4;//store the use choice
+	float percent;
+	while (true) {
+		cout << "=================================================\n";
+		cout << "Please select the program option, in which you want to enter enrollemnts\n\n";
+		cout << "Please enter option 1 for BCS\n";
+		cout << "Please enter option 2 for BIT\n";
+		cout << "Please enter option 3 for BBA\n";
+		cout << "Please enter option 4 for BA\n";
+		cout << "Please Enter program option:\t";
+		cin >> ch;
+		cout << "\n=======================================================================\n";
+		if (ch >= 1 && ch <= 4) {
+			break;
+		}
+		else {
+			cout << "THE PROGRAM OPTION IS INVALID PLEASE TRY AGAIN.";
+			cout << "Press any key to continue...";
+			_getch();
+			system("cls");
+		}
+
+	}//while loops ends
+	switch (ch) {
+	case 1:
+
+		cout << "\nPlease Enter number of students in Year 1 :\t";
+		cin >> nOfstudents1;
+		cout << "\nPlease Enter number of students in Year 2 :\t";
+		cin >> nOfstudents2;
+		cout << "\nPlease Enter number of students in Year 3 :\t";
+		cin >> nOfstudents3;
+		cout << "\nPlease Enter number of students in Year 4 :\t";
+		cin >> nOfstudents4;
+		cout << "======================DEPARTMENT OF COMPUTER SCIENCE ================================\n";
+		cout << "The number of Students in Year 1 is :\t" << nOfstudents1;
+		cout << "\nThe number of Students in Year 2 is :\t" << nOfstudents2;
+		cout << "\nThe number of Students in Year 3 is :\t" << nOfstudents3;
+		cout << "\nThe number of Students in Year 4 is :\t" << nOfstudents4;
+		percent = (nOfstudents1 * 100.0) / 371;
+		cout << "\n\nThe percentage of Students in Year 1 is :\t" << percent << "%";
+		percent = (nOfstudents2 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 2 is :\t" << percent<< "%";
+		percent = (nOfstudents3 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 3 is :\t" << percent << "%";
+		percent = (nOfstudents4 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 4 is :\t" << percent<< "%";
+
+		total = nOfstudents1 + nOfstudents2 + nOfstudents3 + nOfstudents4;
+		cout << "\n\nThe total number of students in program is :\t" << total;
+		//check the enrollment is over the limit
+		if (nOfstudents1 > 100) {
+			cout << "\n\nThe number of students enrolled in year 1 is over the limit.";
+		}
+		if (nOfstudents2 > 100) {
+			cout << "\nThe number of students enrolled in year 2 is over the limit.";
+		}
+		if (nOfstudents3 > 100) {
+			cout << "\nThe number of students enrolled in year 3 is over the limit.";
+		}
+		if (nOfstudents4 > 100) {
+			cout << "\n\The number of students enrolled in year 3 is over the limit.";
+		}
+		break;
+	case 2:
+		cout << "\nPlease Enter number of students in Year 1 :\t";
+		cin >> nOfstudents1;
+		cout << "\nPlease Enter number of students in Year 2 :\t";
+		cin >> nOfstudents2;
+		cout << "\nPlease Enter number of students in Year 3 :\t";
+		cin >> nOfstudents3;
+		cout << "\nPlease Enter number of students in Year 4 :\t";
+		cin >> nOfstudents4;
+		cout << "======================DEPARTMENT OF COMPUTER SCIENCE ================================\n";
+		cout << "The number of Students in Year 1 is :\t" << nOfstudents1;
+		cout << "\nThe number of Students in Year 2 is :\t" << nOfstudents2;
+		cout << "\nThe number of Students in Year 3 is :\t" << nOfstudents3;
+		cout << "\nThe number of Students in Year 4 is :\t" << nOfstudents4;
+		percent = (nOfstudents1 * 100.0) / 371;
+		cout << "\n\nThe percentage of Students in Year 1 is :\t" << percent << "%";
+		percent = (nOfstudents2 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 2 is :\t" << percent << "%";
+		percent = (nOfstudents3 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 3 is :\t" << percent << "%";
+		percent = (nOfstudents4 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 4 is :\t" << percent << "%";
+
+		total = nOfstudents1 + nOfstudents2 + nOfstudents3 + nOfstudents4;
+		cout << "\n\nThe total number of students in program is :\t" << total;
+		//check the enrollment is over the limit
+		if (nOfstudents1 > 100) {
+			cout << "\n\nThe number of students enrolled in year 1 is over the limit.";
+		}
+		if (nOfstudents2 > 100) {
+			cout << "\nThe number of students enrolled in year 2 is over the limit.";
+		}
+		if (nOfstudents3 > 100) {
+			cout << "\nThe number of students enrolled in year 3 is over the limit.";
+		}
+		if (nOfstudents4 > 100) {
+			cout << "\n\The number of students enrolled in year 3 is over the limit.";
+		}
+		break;
+	case 3:
+		cout << "\nPlease Enter number of students in Year 1 :\t";
+		cin >> nOfstudents1;
+		cout << "\nPlease Enter number of students in Year 2 :\t";
+		cin >> nOfstudents2;
+		cout << "\nPlease Enter number of students in Year 3 :\t";
+		cin >> nOfstudents3;
+		cout << "\nPlease Enter number of students in Year 4 :\t";
+		cin >> nOfstudents4;
+		cout << "======================DEPARTMENT OF BUSINESS ADMINISTRATION ================================\n";
+		cout << "The number of Students in Year 1 is :\t" << nOfstudents1;
+		cout << "\nThe number of Students in Year 2 is :\t" << nOfstudents2;
+		cout << "\nThe number of Students in Year 3 is :\t" << nOfstudents3;
+		cout << "\nThe number of Students in Year 4 is :\t" << nOfstudents4;
+		percent = (nOfstudents1 * 100.0) / 371;
+		cout << "\n\nThe percentage of Students in Year 1 is :\t" << percent << "%";
+		percent = (nOfstudents2 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 2 is :\t" << percent << "%";
+		percent = (nOfstudents3 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 3 is :\t" << percent << "%";
+		percent = (nOfstudents4 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 4 is :\t" << percent << "%";
+
+		total = nOfstudents1 + nOfstudents2 + nOfstudents3 + nOfstudents4;
+		cout << "\n\nThe total number of students in program is :\t" << total;
+		//check the enrollment is over the limit
+		if (nOfstudents1 > 100) {
+			cout << "\n\nThe number of students enrolled in year 1 is over the limit.";
+		}
+		if (nOfstudents2 > 100) {
+			cout << "\nThe number of students enrolled in year 2 is over the limit.";
+		}
+		if (nOfstudents3 > 100) {
+			cout << "\nThe number of students enrolled in year 3 is over the limit.";
+		}
+		if (nOfstudents4 > 100) {
+			cout << "\n\The number of students enrolled in year 3 is over the limit.";
+		}
+		break;
+	case 4:
+		cout << "\nPlease Enter number of students in Year 1 :\t";
+		cin >> nOfstudents1;
+		cout << "\nPlease Enter number of students in Year 2 :\t";
+		cin >> nOfstudents2;
+		cout << "\nPlease Enter number of students in Year 3 :\t";
+		cin >> nOfstudents3;
+		cout << "\nPlease Enter number of students in Year 4 :\t";
+		cin >> nOfstudents4;
+		cout << "======================DEPARTMENT OF FINE ARTS ================================\n";
+		cout << "The number of Students in Year 1 is :\t" << nOfstudents1;
+		cout << "\nThe number of Students in Year 2 is :\t" << nOfstudents2;
+		cout << "\nThe number of Students in Year 3 is :\t" << nOfstudents3;
+		cout << "\nThe number of Students in Year 4 is :\t" << nOfstudents4;
+		percent = (nOfstudents1 * 100.0) / 371;
+		cout << "\n\nThe percentage of Students in Year 1 is :\t" << percent << "%";
+		percent = (nOfstudents2 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 2 is :\t" << percent << "%";
+		percent = (nOfstudents3 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 3 is :\t" << percent << "%";
+		percent = (nOfstudents4 * 100.0) / 371;
+		cout << "\nThe percentage of Students in Year 4 is :\t" << percent << "%";
+
+		total = nOfstudents1 + nOfstudents2 + nOfstudents3 + nOfstudents4;
+		cout << "\n\nThe total number of students in program is :\t" << total;
+		//check the enrollment is over the limit
+		if (nOfstudents1 > 100) {
+			cout << "\n\nThe number of students enrolled in year 1 is over the limit.";
+		}
+		if (nOfstudents2 > 100) {
+			cout << "\nThe number of students enrolled in year 2 is over the limit.";
+		}
+		if (nOfstudents3 > 100) {
+			cout << "\nThe number of students enrolled in year 3 is over the limit.";
+		}
+		if (nOfstudents4 > 100) {
+			cout << "\n\The number of students enrolled in year 3 is over the limit.";
+		}
+		break;
+
+	}//switch ends
+
+
+
+	cout << "\n\n Press any key to continue...";
+	_getch();
+	return 0;
+}

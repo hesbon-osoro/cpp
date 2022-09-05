@@ -1,0 +1,399 @@
+			double amount;
+			cin>>amount;
+			
+			if(amount>accountBalance||amount>9000)//Limit set at $9000 maximum after paying bills
+			{
+        system("cls");
+        cout<<"\n============================COK ACCOUNT WITHDRAWAL=============================\n\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"============================+++++++++++++++++++++++============================\n\n";
+		cout<<"\n\tInsufficient Available Balance in your account.\n\n"<<endl;
+		cout<<"\t\t\tSorry !!\n"<<endl;
+		system("PAUSE");
+			}
+			else
+			{
+				double b;
+				accountBalance = startBalance-amount ;
+  	system("cls");
+        cout<<"\n============================COK ACCOUNT WITHDRAWAL=============================\n\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"============================+++++++++++++++++++++++============================\n\n";
+		cout<<"Your new available Balanced Amount is $"<<startBalance<<endl ;
+		cout<<"Press any key to Return to the Main Menu\n\n";
+		system("PAUSE");				
+		   }
+	
+    }
+//==================================================================================================
+	void COKAccountHolders::payBills()
+	{
+        int choice_t;
+		
+		do{
+        system("cls");
+		cout<<"\n===========================COK BILLS PAYMENT SYSTEM MENU========================\n";
+		cout << "\t\tEnter (1) for JPS Electricity Bill Payment" << endl;
+        cout << "\t\tEnter (2) for NWC Water Supplier Bill Payment" << endl;
+        cout << "\t\tEnter (3) for FLOW Broadcasting Service Bill Payment" << endl;
+        cout << "\t\tEnter (4) for residentail RENT Payment" << endl;
+        cout << "\t\tEnter (0) to Exit Bill Payment System" << endl << endl;
+        cout << "\t\tPLEASE ENTER A SELECTION AND PRESS RETURN KEY: \n\n";
+        cout<<"================================COK MAIN MENU==================================\n\n";
+	    
+         cin>>choice_t;
+         
+                switch (choice_t)
+                 {
+            case 1:
+        system("cls");
+		cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"Pay this month's JPS Electric Company electricity bill of $2000.00 now?\n\n";
+        cout<<"\t\t\tPress 1 for Yes OR Press 0 for No\n\n";
+        int r;
+		
+		cin>>r;
+		if(r==1)
+		{//accountBalance = startBalance-accountBalance;
+         accountBalance = startBalance-2000;
+        system("cls");
+        cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+        cout<<"\n\tYour JPS electricity bill of $2000.00 has been paid.\n\n";
+		cout<<"\tYour account new Available Balanced Amount is $"<<accountBalance<<endl ;
+		cout<<"\n============================+++++++++++++++++++++++===========================\n\n";
+		cout<<"Press any key to Return to the Main Menu\n\n";
+        }
+        else
+        {
+       system("cls");
+       cout<<"\n==========================COK BILLS PAYMENT SYSTEM============================\n\n";
+       cout<<"\tYour account Available Balanced Amount is $"<<startBalance<<endl ;
+       cout<<"\n\n\tExiting Bill Payment System. Thank you!.\n\n";     
+     	cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+       cout<<"Press any key to Return to the Main Menu\n\n";      
+        }
+		system("PAUSE");
+				break;
+			case 2:
+		system("cls");
+		cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"Pay this month's NWC Water Company water supply bill of $1500.00 now?\n\n";
+        cout<<"\t\t\tPress 1 for Yes OR Press 0 for No\n\n";
+        int d;
+		
+		cin>>d;
+		if(d==1)
+		{accountBalance = startBalance-1500;
+        system("cls");
+        cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+        cout<<"\n\tYour NWC Water Supply bill of $1500.00 has been paid.\n\n";
+		cout<<"\tYour account new Available Balanced Amount is $"<<accountBalance<<endl ;
+		cout<<"\n============================+++++++++++++++++++++++===========================\n\n";
+		cout<<"Press any key to Return to the Main Menu\n\n";
+        }
+        else
+        {
+       system("cls");
+       cout<<"\n==========================COK BILLS PAYMENT SYSTEM============================\n\n";
+       cout<<"\tYour account Available Balanced Amount is $"<<startBalance<<endl ;
+       cout<<"\n\n\tExiting Bill Payment System. Thank you!.\n\n";     
+     	cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+       cout<<"Press any key to Return to the Main Menu\n\n";      
+        }
+		system("PAUSE");
+				break;
+			case 3:
+				system("cls");
+		cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"Pay this month's FLOW Braodcasting Company service bill of $3500.00 now?\n\n";
+        cout<<"\t\t\tPress 1 for Yes OR Press 0 for No\n\n";
+        int f;
+		
+		cin>>f;
+		if(f==1)
+		{accountBalance = startBalance-1500;
+        system("cls");
+        cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+        cout<<"\n\tYour FLOW Broadcasting Service bill of $3500.00 has been paid.\n\n";
+		cout<<"\tYour account new Available Balanced Amount is $"<<accountBalance<<endl ;
+		cout<<"\n============================+++++++++++++++++++++++===========================\n\n";
+		cout<<"Press any key to Return to the Main Menu\n\n";
+        }
+        else
+        {
+       system("cls");
+       cout<<"\n==========================COK BILLS PAYMENT SYSTEM============================\n\n";
+       cout<<"\tYour account Available Balanced Amount is $"<<startBalance<<endl ;
+       cout<<"\n\n\tExiting Bill Payment System. Thank you!.\n\n";     
+     	cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+       cout<<"Press any key to Return to the Main Menu\n\n";      
+        }
+		system("PAUSE");
+				break;
+			case 4:
+        system("cls");
+		cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"Pay this month's Residential RENT service bill of $14000.00 now?\n\n";
+        cout<<"\t\t\tPress 1 for Yes OR Press 0 for No\n\n";
+        int g;
+		
+		cin>>g;
+		if(g==1)
+		{accountBalance = startBalance-14000;
+        system("cls");
+        cout<<"\n===========================COK BILLS PAYMENT SYSTEM==========================\n";
+        cout<<"\n\tYour FLOW Broadcasting Service bill of $3500.00 has been paid.\n\n";
+		cout<<"\tYour account new Available Balanced Amount is $"<<accountBalance<<endl ;
+		cout<<"\n============================+++++++++++++++++++++++===========================\n\n";
+		cout<<"Press any key to Return to the Main Menu\n\n";
+        }
+        else
+        {
+       system("cls");
+       cout<<"\n==========================COK BILLS PAYMENT SYSTEM============================\n\n";
+       cout<<"\tYour account Available Balanced Amount is $"<<startBalance<<endl ;
+       cout<<"\n\n\tExiting Bill Payment System. Thank you!.\n\n";     
+     	cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+       cout<<"Press any key to Return to the Main Menu\n\n";      
+        }
+		system("PAUSE");
+		   case 0:
+               int main();
+                break;
+		default:cout<<"Please Enter the Correct Number Choice"<<endl;
+		}
+	}while(choice_t!=0);
+                        
+	
+   };
+    
+//==================================================================================================
+void COKAccountHolders::details()
+	{
+		system("cls");
+	     
+		cout<<"\n============================COK ACCOUNT DETAILS=============================\n\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"\tYour account Available Balanced Amount is $"<<startBalance<<endl ;
+		cout<<"============================+++++++++++++++++++++++============================\n\n";
+		cout<<"Press any key to Return to the Main Menu\n\n";
+		system("PAUSE");	
+    }
+
+//==================================================================================================	  
+
+void COKAccountHolders::accountExit()
+	{
+		system("cls");
+	      
+
+		cout<<"\n============================COK ACCOUNT EXIT=============================\n\n";
+		cout<<"\n\n\t\tEXITING...........EXITING...............EXITING\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"============================+++++++++++++++++++++++============================\n\n";
+		system("PAUSE");
+        exit(1);	
+    }
+    
+    
+//==================================================================================================	  
+/*class Bills:public Bank
+     {
+      
+      double JPS;
+      double NWC;
+      double FLOW;
+      double RENT;
+      double bills;
+      void Display_accountBalance();
+      public:
+      void jps();
+      void nwc();
+      void flow();
+      void rent();
+     
+      Bills()
+      {
+      double JPS = 2000;
+      double NWC = 1500;
+      double FLOW = 3500;
+      double RENT = 14000;
+        
+        }
+      void Bills::jps()
+	
+		system("cls");
+	      
+
+		cout<<"\n============================COK BILL PAYMENT SYSTEM=============================\n\n";
+		cout<<"\n\nThe Names of the Account Holders are :"<<accountHolders<<"\n\n";
+		cout<<"\tThe Account Holders' address is :"<<accountHoldersAddress<<"\n\n";
+		cout<<"\tThe Branch location is :"<<branch<<"\n\n";
+		cout<<"\tAccount number :"<<accountNumber<<"\n\n";
+		cout<<"====================++THANK YOU FOR MAKING IT COK++============================\n\n";
+		cout<<"============================+++++++++++++++++++++++============================\n\n";
+		system("PAUSE");	
+      }
+      
+      };*/
+//==================================================================================================
+
+class Limits:public Bank
+      {
+      public:
+             void SetLimit(double NewLimit)
+             {}
+      
+             double Getlimit()
+             {}
+      
+      };	      
+//==================================================================================================
+//==================================================================================================	  
+//==================================================================================================	  
+	int main()
+	{
+    int e;
+	COKAccountHolders p;
+	
+    system ("Color 1b");
+		cout<<"\n============================WELCOME TO COK==================================\n\n";
+		cout<<"\t\t\t--------------------\n"<<endl;
+		//Prompt to show today's date
+       cout << "\t\tToday's date is: ";
+       //Show date and time function
+         time_t now;
+         time(&now);
+
+        printf("%s\n", ctime(&now));;
+      //Give space for the function of date and time
+        cout<<"\t\t\t--------------------\n"<<endl;
+		cout<<"============================WELCOME TO COK==================================\n\n";
+//==================================================================================================	  
+		
+	  cout<<"\tPress 1 and press Enter to Access your account via pin number\n\n";
+      cout<<"\t\t\t\t\t or \n\n";
+      cout<<"\t\t\tPress 0 and press Enter to get Help.\n\n";
+		
+      int access;
+      cin>>access;
+      switch(access)
+      {
+      case 1://pin to access account
+      system("cls");int i, pin;
+      
+      cout<<"\n============================COK ACCOUNT ACCESS==================================\n\n";
+      cout<<"\n\nWhat is your account Pin access Number? Only one attempts allowed.\n\n"<<endl; 
+      cout<<"============================COK ACCOUNT ACCESS==================================\n\n";                
+      cin>>pin;
+      
+      system("cls");
+      
+      if(pin==123)
+      
+      {
+      system("cls");  
+      
+      do
+    	{ 
+      system("cls");   
+      system ("Color 1a");
+cout << endl << "\n======================COK Main Menu Screen======================\n" << endl << endl;
+cout << "\t\tEnter (1) for Cash Deposit" << endl;
+cout << "\t\tEnter (2) for Cash Withdrawal" << endl;
+cout << "\t\tEnter (3) for Balance Inquiry" << endl;
+cout << "\t\tEnter (4) for Pay Bills" << endl;
+cout << "\t\tEnter (5) to Account Interest Payment" << endl;
+cout << "\t\tEnter (0) to Exit ATM" << endl << endl;
+cout << "\t\tPLEASE ENTER A SELECTION AND PRESS RETURN KEY: \n\n";
+cout<<"==========================COK MAIN MENU================================\n\n";
+      	
+		cin>>e;
+		switch(e)
+		{
+			case 1:
+				p.deposit();
+				break;
+			case 2:
+				p.withdraw();
+				break;
+			case 3:
+				p.details();
+				break;
+			case 4:
+                p.payBills();
+				break;
+			case 5:
+                p.interest();
+				break;
+			case 0:
+                p.accountExit();
+                break;
+		default:cout<<"Please Enter the Correct Number Choice"<<endl;
+		}
+	}while(e!=0);
+
+      break;                                     
+      }
+               
+      else 
+      {
+      system("cls");
+      system("Color 1c");
+cout<<"\n===========================THANKS FOR MAKING IT COK===========================\n\n";
+cout<<"\nYou had made three attempts which failed!!! No More attemps allowed!! Sorry!!\n\n";
+cout<<"===========================THANKS FOR MAKING IT COK===========================\n\n";
+              
+      system("PAUSE");
+      exit (1);
+      }
+//==================================================================================================     
+      
+      
+    case 0://pin to access account
+    system("cls");
+      cout<<"\n==========================COK ACCOUNT STATUS================================\n\n";
+                    cout<<"\tYou must have the correct pin number to access this acount. See your\n\n"; 
+                    cout<<"\t  bank representative for assistance during bank opening hours\n\n";
+                    cout<<"\t\tThanks for making it COK, your choice today!!\n\n";
+      cout<<"==========================COK ACCOUNT STATUS================================\n\n";
+      system ("PAUSE");
+      exit(1);       
+      break;    
+//==================================================================================================	     
+    }
+    
+system("PAUSE");
+return 0;
+
+};
